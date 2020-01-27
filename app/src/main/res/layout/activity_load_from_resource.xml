@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadFromResourceActivity">
+
+
+    <TextView
+        android:id="@+id/textViewImageResourceDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textViewImageResourceDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewFromResourceLoaded"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/imageViewLoaded"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="@+id/textViewImageResourceDescription"
+        app:layout_constraintStart_toStartOf="@+id/textViewImageResourceDescription"
+        app:layout_constraintTop_toBottomOf="@+id/textViewImageResourceDescription"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewCodeUseResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_code"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFromResourceLoaded" />
+
+    <TextView
+        android:id="@+id/textViewCodeSourceResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textUrlResource"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCodeUseResource"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewCodeUseResource"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCodeUseResource" />
+</androidx.constraintlayout.widget.ConstraintLayout>

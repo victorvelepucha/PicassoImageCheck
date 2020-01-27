@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadExternalImageActivity">
+
+    <Button
+        android:id="@+id/buttonChooseAnExternalImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_chooseAnExternalImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPathExternalImagen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_pathExternalImagen"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChooseAnExternalImage"
+        app:layout_constraintStart_toStartOf="@+id/buttonChooseAnExternalImage"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChooseAnExternalImage" />
+
+    <ImageView
+        android:id="@+id/imageViewFromExternalDevice"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imageViewLoaded"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPathExternalImagen"
+        app:layout_constraintStart_toStartOf="@+id/textViewPathExternalImagen"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPathExternalImagen"
+        app:srcCompat="@drawable/empty_image" />
+
+    <TextView
+        android:id="@+id/textViewCodeTitleExternalStorage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView_code"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPathExternalImagen"
+        app:layout_constraintStart_toStartOf="@+id/textViewPathExternalImagen"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFromExternalDevice" />
+
+    <TextView
+        android:id="@+id/textViewCodeSourceToCallExternalStorage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textStorageSource"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCodeTitleExternalStorage"
+        app:layout_constraintStart_toStartOf="@+id/textViewCodeTitleExternalStorage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCodeTitleExternalStorage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

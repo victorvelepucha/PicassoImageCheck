@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Picasso Photo Check</string>
+    <string name="textView_title">Application to show how can use the Picasso Library</string>
+    <string name="button_loadFromUrl">Load image from URL</string>
+    <string name="button_loadImageFromStorage">Load Image from Device Storage</string>
+    <string name="buttonLoadFromAppResources">Load Image from App Resources</string>
+    <string name="imageView_logoApp_contentDescription">Logo Picasso Image Test</string>
+    <string name="button_load">Load</string>
+    <string name="textView_WriteAUrl">Write a Url</string>
+    <string name="imageViewLoaded">Default Image Picture</string>
+    <string name="textUrlDirection">Picasso.get().load("\"%1$s\"").into(imageView);</string>
+    <string name="exampleToUseUrl">https://i.imgur.com/DvpvklR.png</string>
+    <string name="errorToLoadImage">Error loading image!!</string>
+    <string name="textView_codeTitle">Code:</string>
+    <string name="textViewImageResourceDescription">There is an internal image inside of this App, in the drawable folder called logo.png</string>
+    <string name="textView_code">Code source:</string>
+    <string name="textUrlResource">Picasso.get().load(R.drawable.logo).into(imageView)</string>
+    <string name="button_chooseAnExternalImage">Choose an image from galery</string>
+    <string name="textView_pathExternalImagen" />
+    <string name="textViewCodeUri"><b>UriObject=</b>%1$s</string>
+    <string name="textStorageSource">Picasso.get().load(UriObject).into(imageView);</string>
+</resources>
