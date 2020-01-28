@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="128dp"
                 android:contentDescription="@string/imageView_logoApp_contentDescription"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/banner" />
 
             <Button
                 android:id="@+id/buttonLoadFromUrl"

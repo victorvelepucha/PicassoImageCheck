@@ -13,7 +13,7 @@ class LoadFromResourceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_load_from_resource)
 
-        Picasso.get().load(R.drawable.logo).fit().placeholder(R.drawable.spinner)
+        Picasso.get().load(R.drawable.banner).fit().placeholder(R.drawable.spinner)
             .into(imageViewFromResourceLoaded, object : Callback {
                 override fun onSuccess() {
                     textViewCodeSourceResource.setText(R.string.textUrlResource)

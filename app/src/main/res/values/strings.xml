@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Picasso Photo Check</string>
     <string name="textView_title">Application to show how can use the Picasso Library</string>
@@ -15,8 +16,8 @@
     <string name="textViewImageResourceDescription">There is an internal image inside of this App, in the drawable folder called logo.png</string>
     <string name="textView_code">Code source:</string>
     <string name="textUrlResource">Picasso.get().load(R.drawable.logo).into(imageView)</string>
-    <string name="button_chooseAnExternalImage">Choose an image from galery</string>
+    <string name="button_chooseAnExternalImage">Choose an image from gallery</string>
     <string name="textView_pathExternalImagen" />
-    <string name="textViewCodeUri"><b>UriObject=</b>%1$s</string>
+    <string name="textViewCodeUri">&lt;b>UriObject=&lt;/b>%1$s</string>
     <string name="textStorageSource">Picasso.get().load(UriObject).into(imageView);</string>
 </resources>

@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textViewImageResourceDescription"
         app:layout_constraintStart_toStartOf="@+id/textViewImageResourceDescription"
         app:layout_constraintTop_toBottomOf="@+id/textViewImageResourceDescription"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/banner" />
 
     <TextView
         android:id="@+id/textViewCodeUseResource"
